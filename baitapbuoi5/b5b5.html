@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Bài 5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body{
+    background-color: whitesmoke;
+}
+.mySlides {
+    display:none;
+    animation-name: fade;
+   
+} 
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+.container{
+    width: 890px;
+    height: 550px;
+    overflow: hidden;
+    margin: 20px calc((100% - 890px)/2);
+    border-radius: 20px;
+}
+.displaycontainer{
+    position:relative;
+}
+.button{
+    font-size: 48px;
+    border: none;
+    display: inline-block;
+    padding: 0 12px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #1f71a1;
+    background-color: #00000000;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover{
+    color: #1f71a1;
+}
+.left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+}
+.right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+}
+@media screen and (max-width: 950px) {
+    .container{
+        width: 89vw;
+        height: 55vw;
+        margin: 20px calc((100% - 89vw)/2);
+        border-radius: 10px;
+    }
+    .button{
+        font-size: 36px;
+    }
+}
+</style>
+<body>
+    <div class="container displaycontainer">
+        <img class="mySlides" src="anh1.jpg" style="width:100%;height:100%">
+        <img class="mySlides" src="anh2.jpg" style="width:100%;height:100%">
+        <img class="mySlides" src="anh3.jpg" style="width:100%;height:100%">
+        <img class="mySlides" src="anh4.jpg" style="width:100%;height:100%">
+        <img class="mySlides" src="anh5.jpeg" style="width:100%;height:100%">
+        <img class="mySlides" src="anh6.jpeg" style="width:100%;height:100%">
+        <button class="button left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+var i;
+var x = document.getElementsByClassName("mySlides");
+if (n > x.length) {slideIndex = 1}
+if (n < 1) {slideIndex = x.length}
+for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+}
+x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

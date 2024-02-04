@@ -1,0 +1,109 @@
+.homework{
+    width: 100%;
+    background-color: #a4cce7;
+    /* margin-top: 20px; */
+    position: relative;
+}
+.homework h2{
+    color: #1f71a1;
+    font-size: 30pt;
+    text-align: center;
+    padding: 40px;
+    font-family: BMLucas;
+}
+a:hover{
+    color: #081b29;
+}
+ a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+.homework1{
+    margin-top:40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0px 50px;
+    
+}
+.LAB{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 250px;
+    height: 300px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+}
+.LAB h3{
+    font-size: 25pt;
+    /* text-align: center;
+    justify-content: center;
+    align-items: center; */
+    padding-top: 50%;
+    color: rgb(20, 91, 153);
+}
+.baitap{
+    font-size: 16pt;
+    position: absolute;
+    text-align: center;
+    background-image: url(dung.jpg);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    border-radius: 10px;
+    transition: 0.5s bottom 1.75s opacity;
+    transition-delay: 50ms;
+    
+}
+.baitap1 p:first-child{
+    margin-top: 35%;
+}
+.baitap2 p:first-child{
+    margin-top: 30%;
+}
+.baitap3 p:first-child{
+    margin-top: 35%;
+}
+.bai30 p:first-child{
+    margin-top: 50%;
+}
+.baitap4 p:first-child{
+    margin-top: 35%;
+}
+.baitap5 p:first-child{
+    margin-top: 30%;
+}
+.baitap6 p:first-child{
+    margin-top: 50%;
+}
+.LAB:hover .baitap{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.baitap a:after{
+    background-color: white;
+    width: 0;
+    opacity: 1;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    content: "";
+    overflow: hidden;
+    bottom: -1px;
+    display: block;
+    height: 1px;
+    transition: 0.5s bottom 1.75s opacity;
+}
+.baitap a:hover:after{
+    width: 100%;
+}
