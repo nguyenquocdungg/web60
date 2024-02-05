@@ -1,57 +1,84 @@
-.slideshow-container {
-    margin: 0;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.slideshow-container {
+.contactUs{
     position: relative;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:rgba(118, 177, 225, 0.5) ;
 }
 
-
-.mySlides {
-    height: 336px;
-    overflow: hidden;
-    padding: 0px 10px;
+.contact-box{
+    max-width: 860px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2 ,1fr);
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    background-color: #a4cce7;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
 }
-
-.mySlides img {
-    width: 90%;
-}
-
-.slideshow-container img {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.slideshow-container-1 {
-    margin: 0;
-    margin-top: 20px;
+.left iframe{
+    padding: 10px 10px;
     width: 100%;
+    height: 470px;
 }
-
-.slideshow-container-1 {
+.right{
+    padding: 25px 40px;
+}
+.contact-box .right h2{
     position: relative;
+    padding: 0 0 30px;
+    color: #1f71a1;
+}
+.contact-box .right h2:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    /* background-color: aquamarine; */
+
+}
+.field{
     width: 100%;
-    height: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.0);
+    outline: none;
+    background-color: #dbe5eb;
+    padding: .5rem 1rem;
+    margin-bottom: 22px;
+    transition: .3s;
 }
-.show1 {
-    height: 336px;
-    overflow: hidden;
-    padding: 0px 10px;
-    text-align: center;
-}
-
-.show1 img {
-    width: 90%;
+.field:hover{
+    background-color: #1d2226;
 }
 
-.slideshow-container-1 img {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
+.btn{
+    width: 50%;
+    padding: .5rem 1rem;
+    background: #fff;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover{
+    background: #4c9dcc;
+}
+.field:focus{
+    border: 2px solid rgba(118, 177, 225, 0.5);
+    background: #fff;
+}
+@media screen and (max-width:600px){
+.contact-box{
+    grid-template-columns: 1fr;
+}
+.left iframe{
+    padding: 0;
+}
 }

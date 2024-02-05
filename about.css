@@ -1,0 +1,227 @@
+#about-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 5%;
+    background-color: rgba(118, 177, 225, 0.5);
+}
+.about-left{
+    margin: 0;
+    margin-top: 20px;
+    position: relative;
+    height: 100%;
+}
+.mySlides {
+    height: 336px;
+    overflow: hidden;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.mySlides img {
+    width: 90%;
+}
+
+.about-left img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-left,
+.about-right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-right {
+    text-align: left;
+    margin-bottom: 0;
+}
+.about-right ul li {
+    display: flex;
+    align-items: center;
+}
+
+.about-right h1 {
+    color: brown;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-right p {
+    color: #444;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.address-logo {
+    display: flex;
+    align-items: center;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.address-logo i {
+    margin-right: 10px;
+}
+
+.saprater {
+    margin: 0 5px;
+}
+.about-right .expertise ul{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.expertise h3{
+    margin-bottom: 10px;
+}
+.expertise .expertise-logo{
+    font-size: 18px;
+    margin-right: 5px;
+} 
+
+@media screen and (min-width: 768px) {
+    #about-section {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .about-left,
+    .about-right {
+        width: 48%;
+    }
+    
+}
+
+.address-logo i {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.saprater {
+    margin: 0 10px;
+}
+
+
+#skill-section{
+    width: 100%;
+    height: auto;
+    background-color: rgba(39, 119, 194, 0.311);
+}
+.headerr{
+    width: 100%;
+    margin-bottom: 70px;
+    padding-top: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.headerr h2 {
+    margin-bottom:  5px;
+}
+
+.headerr h2 span {
+    color: #1f71a1;
+}
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px ;
+    grid-row-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.skill-main .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.skill-bar .info .persent{
+    font-weight: bold;
+}
+.skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    position: relative;
+    background-color:#444 ;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #1f71a1;
+    border-radius: 25px;
+}
+.skill-bar .bar .html{
+    width: 40%;
+    animation: html 3s;
+}
+
+@keyframes html {
+    0%{
+        width: 0;
+    }100%{
+        width: 40%;
+    }
+}
+
+.skill-bar .bar .css{
+    width: 40%;
+    animation: css 3s;
+}
+
+@keyframes css {
+    0%{
+        width: 0;
+    }100%{
+        width: 40%;
+    }
+}
+
+.skill-bar .bar .js{
+    width: 10%;
+    animation: js 3s;
+}
+
+@keyframes js {
+    0%{
+        width: 0;
+    }100%{
+        width: 10%;
+    }
+}
+.skill-bar .bar .photo{
+    width: 30%;
+    animation: photo 3s;
+}
+
+@keyframes photo {
+    0%{
+        width: 0;
+    }100%{
+        width: 30%;
+    }
+}
+
+.skill-bar .bar .media{
+    width: 30%;
+    animation: js 3s;
+}
+
+@keyframes media {
+    0%{
+        width: 0;
+    }100%{
+        width: 30%;
+    }
+}
+
